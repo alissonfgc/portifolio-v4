@@ -1,0 +1,233 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Consolas', monospace;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  z-index: 1;
+  user-select: none;
+}
+
+.selecionalvel {
+  user-select: auto;
+}
+
+header {
+  width: 100%;
+}
+
+#navbar-1 {
+  z-index: 4;
+}
+
+#navbar-2 {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  z-index: 2;
+}
+
+footer {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: block;
+  width: 100%;
+  margin: 0px 0px;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section.module p {
+  margin-bottom: 40px;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module {
+  background: #333333;
+}
+
+section.module.content {
+  padding: 60px 0;
+  min-height: 120vh;
+  background: #282828;
+}
+
+section.module.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 120vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+}
+
+section.module.banner-start {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  background: #282828;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.reveal {
+  visibility: hidden;
+}
+
+.area-1 {
+  margin: 20vh 0 0 0;
+
+}
+
+.area-2 {
+  margin: 10vh 0 0 0;
+
+}
+
+section.module.parallax:after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 10%, #000 100%);
+}
+
+.div-3d-img {
+  max-width: 30vw;
+  height: auto;
+}
+
+@media (max-width: 575px) {
+  .div-3d-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.img-3d {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+section.module.parallax {
+  height: 100vh;
+  width: 100%;
+  background: #333333;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-image: url("../img/bg-parallax-fixed.png");
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.parallax-div {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-img {
+  width: 50%;
+  height: auto;
+  margin-top: 15vh;
+  margin-left: 5px;
+}
+
+section.module.parallax-2 {
+  background: #333333;
+  background-image: url("img/bg-parallax-fixed.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /*background: #333fcc;*/
+}
+
+section.module.parallax-3 {
+  background: #333333;
+  /*background: #333fcc;*/
+}
+
+section.module.parallax-4 {
+  background: #333333;
+  /*background: #333fcc;*/
+}
+
+section.module.parallax-5 {
+  background: #333333;
+  /*background: #333fcc;*/
+}
+
+section.module.parallax-6 {
+  background: #333333;
+  /*background: #333fcc;*/
+}
+
+.carousel-banner {
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner-1 {
+  background: linear-gradient(to bottom right, #0ee67a, #2ba3d6);
+}
+
+#carousel-img-1 {
+  visibility: hidden;
+  width: auto;
+  height: 70%;
+  transform: translate(0%, 20%);
+}
+
+#banner-2 {
+  background: #494747;
+}
+
+#carousel-img-2 {
+  width: auto;
+  height: 100%;
+}
+
+#banner-3 {
+  background: #494747;
+}
+
+#carousel-img-3 {
+  width: auto;
+  height: 100%;
+}
+
+.text-carousel {
+  color: #ffffff;
+  text-shadow: 2px 2px black;
+}
