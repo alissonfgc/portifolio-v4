@@ -1,15 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="alissonfgc">
+  <link rel="shortcut icon" href="img/icon-code-green.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
   <title>@alissonfgc | Portfólio</title>
 </head>
-<body>
-  <div class="parallax-div">
-    <h1>Esta página está passando por atualização</h1>
-    <h1>This page is undergoing update</h1>
+
+<body class="bg-dark">
+  <div class="wrapper row d-flex justify-content-center align-middle align-items-center">
+    <div class="card text-bg-light w-25 text-black text-center">
+      <div class="card-header">
+        Aviso - Warning
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Esta página está sendo atualizada</h5>
+        <h4 class="card-text text-success">Visite o meu GitHub!</h4>
+        </hr>
+        <h5 class="card-title">This page is being updated</h5>
+        <h4 class="card-text text-success">Visit my GitHub!</h4>
+        <a href="https://github.com/alissonfgc" class="btn btn-outline-success">GitHub</a>
+      </div>
+      <div id="day-ago" class="card-footer text-body-secondary">
+        2 days ago
+      </div>
+    </div>
   </div>
-  
+
+  <script>
+    var old = new Date("2023-11-22T12:00:00Z")
+    var today = new Date();
+    const element = document.getElementById("day-ago");
+    element.innerHTML = ("Há " + Math.floor((today - old) / 1000 / 60 / 60 / 24) + " dia(s) | " + Math.floor((today - old) / 1000 / 60 / 60 / 24) + " Day(s) ago");
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
